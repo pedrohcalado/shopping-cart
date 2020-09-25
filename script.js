@@ -59,7 +59,7 @@ function createCartItemElement({ id: sku, title: name, price: salePrice }) {
 // ---------------------------------------------------
 
 
-// create a object to save in local storage
+// create a object with selected items infos
 const createCartObjectItems = ({ id: sku, title: name, price: salePrice }) => {
   const itemsObj = {
     id: sku,
@@ -120,7 +120,7 @@ cartItems.addEventListener('click', (event) => {
 });
 
 // 4 - Save to local storage
-  // the response is at the function onload at the beginning
+  // the response is at the function onload at the end
 
 // 6 - clear button
 clearButton.addEventListener('click', () => {
